@@ -1,7 +1,6 @@
 import { Button, Card, Grid, Typography } from "@mui/material";
 import { useForm } from "react-hook-form";
 import TextFormField from "./components/TextFormField";
-import DatePickerForm from "./components/DateFormField";
 import html2canvas from "html2canvas";
 
 const defaultValues = {
@@ -22,7 +21,7 @@ const defaultValues = {
 }
 
 function App() {
-  const { control, formState: { errors }, handleSubmit, reset } = useForm({
+  const { control, handleSubmit, reset } = useForm({
     defaultValues,
   });
 
